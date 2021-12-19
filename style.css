@@ -1,0 +1,35 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  background: #000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.box {
+  width: 200px;
+  height: 300px;
+  background: chartreuse;
+  background: linear-gradient(45deg, skyblue, red, gold, skyblue);
+  animation: colorchange 5s linear infinite;
+  border-radius: 100% 0% 100% 0% / 63% 32% 68% 37% ;
+}
+
+.box1 {
+  background: linear-gradient(-45deg, skyblue, red, gold, skyblue);
+   border-radius: 0% 100% 0% 100% / 38% 63% 37% 62% ;
+}
+
+@keyframes colorchange {
+  0% {
+    filter: hue-rotate(0deg);
+  }
+  100% {
+    filter: hue-rotate(360deg);
+  }
+}
